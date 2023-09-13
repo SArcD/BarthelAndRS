@@ -841,7 +841,7 @@ with tab3:
 
 
     fig, axes = plt.subplots(nrows = 1,ncols = 1,figsize = (8,8), dpi=300)
-    tree.plot_tree(clf, filled=True, feature_names=BD2019.columns[2:-2].tolist(), class_names=BD2019.columns[-1])
+    tree.plot_tree(clf, filled=True, feature_names=BD2019.columns[2:-2].tolist())
     plt.show()
     st.pyplot(fig)
 
