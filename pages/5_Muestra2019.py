@@ -1117,7 +1117,8 @@ with tab3:
     
     # Graficar árbol
     plt.figure(figsize=(15,10))
-    tree.plot_tree(classifier.estimators_[0], feature_names=X_train.columns, filled=True)
+    tree.plot_tree(classifier.estimators_[0], feature_names=X_train.columns.tolist(), filled=True)
+    #tree.plot_tree(classifier.estimators_[0], feature_names=X_train.columns, filled=True)
     plt.title("Árbol de decisión")
     st.pyplot()
 
