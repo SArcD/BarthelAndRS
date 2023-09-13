@@ -286,9 +286,9 @@ with tabs1:
         # Guarda la imagen
         fig.savefig('Pastel 2019.png', dpi=300)
 
-	with st.container():
-    		st.image('Pastel 2019.png', width=400)
-    		st.caption("Distribución de pacientes por género en la muestra 2019.")
+        with st.container():
+            st.image('Pastel 2019.png', width=400)
+            st.caption("Distribución de pacientes por género en la muestra 2019.")
 
 
         # Prepare file for download.
