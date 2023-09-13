@@ -1706,7 +1706,7 @@ with tab4:
 
 	# Graficar árbol
         bartarbolF, ax = plt.subplots(figsize=(15,10))
-        tree.plot_tree(classifier.estimators_[0], feature_names=XbartF_train.columns, filled=True, ax=ax)
+        tree.plot_tree(classifier.estimators_[0], feature_names=XbartF_train.columns.tolist(), filled=True, ax=ax)
         ax.set_title("Árbol de decisión")
         st.pyplot(bartarbolF)
 	
