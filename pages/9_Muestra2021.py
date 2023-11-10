@@ -1084,8 +1084,8 @@ with tabs3:
     st.text(tree_rules)
 
 
-
-    tree.plot_tree(clf, filled=True, feature_names=BD2021.columns[2:-2].tolist(), class_names=BD2021.columns[-1])
+    #tree.plot_tree(clf, filled=True, feature_names=BD2021.columns[2:-2].tolist(), class_names=BD2021.columns[-1])
+    tree.plot_tree(clf, filled=True, feature_names=BD2021.columns[2:-2].tolist())
     plt.show()
     st.pyplot()
 
