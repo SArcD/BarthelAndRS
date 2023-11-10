@@ -132,7 +132,7 @@ with tabs1:
 
         df2021 = df2021.dropna() #quita las filas que tengan NaN en algun valor
 
-        df2021['Nombre']= df2021['Nombres'] + df2021['Apellidos'] #combina las columnas de nombres y apellidos en una llamada "Nombre"
+        df2021['Nombre']= df2021['Nombres'] + " " + df2021['Apellidos'] #combina las columnas de nombres y apellidos en una llamada "Nombre"
         del df2021['Apellidos'] # y elimina las columnas individuales.
         del df2021['Nombres']
         df2021['Fuerza'] = pd.to_numeric(df2021['Prom_Fuer'])
