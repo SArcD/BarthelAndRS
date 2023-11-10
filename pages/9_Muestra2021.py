@@ -284,9 +284,9 @@ with tabs1:
         fig.savefig('Pastel 2021.png', dpi=300)
 
         # Muestra la gráfica en Streamlit
-        with st.beta_container():
-            st.image('Pastel 2021.png', width=400)
-            st.caption("Distribución de pacientes por género en la muestra 2021.")
+        # Muestra la gráfica en Streamlit
+	st.image('Pastel 2021.png', width=400)
+	st.caption("Distribución de pacientes por género en la muestra 2021.")
 
         # Prepare file for download.
         dfn = 'Pastel 2021.png'
