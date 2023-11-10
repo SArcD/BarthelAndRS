@@ -58,9 +58,6 @@ SetDBEdades=set(ListaDBEdades) #convierte la lista de usuarios cuya edad está r
 #carga los datos de los archivos de excel con los resultados de diferentes test para el año 2018
 df2021=pd.read_excel('2021C.xlsx')
 
-    #del df2020['PuntajeZ'] #quita la fila de puntaje Z, ya que no se tienen datos
-    #del df2020['Marcha'] #quita la fila de Marcha, ya que no se tienen datos
-
 df2021 = df2021.dropna() #quita las filas que tengan NaN en algun valor
 
 df2021['Nombre']= df2021['Nombres'] + df2021['Apellidos'] #combina las columnas de nombres y apellidos en una llamada "Nombre"
